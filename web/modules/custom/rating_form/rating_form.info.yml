@@ -1,0 +1,6 @@
+name: 'Feedback Form'
+type: module
+description: 'A module to collect user feedback.'
+core_version_requirement: ^9 || ^10
+package: Advanced Modules
+

@@ -1,0 +1,7 @@
+api_content.nodedata:
+  path: /node-data
+  defaults:
+    # _form: '\Drupal\content_node\Form\ContentForm'
+    _title: "Node Data"
+  requirements:
+    _permission: "access content"

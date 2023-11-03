@@ -1,0 +1,7 @@
+rating_form.feedback:
+  path: '/feedback-form'
+  defaults:
+    _form: 'Drupal\rating_form\Form\RatingForm'
+    _title: 'Feedback Form'
+  requirements:
+    _permission: 'access content'

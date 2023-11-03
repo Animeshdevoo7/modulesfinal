@@ -1,0 +1,16 @@
+node_json_data.json:
+  path: /config-form
+  defaults:
+    _form: '\Drupal\node_json_data\Form\ConfigForm'
+    _title: "Api Config Form"
+  requirements:
+    _permission: "access content"
+    # _role: 'administrator'
+
+node_json_data.apiconfig:
+  path: /data/{api_key}/{nid}
+  defaults:
+    _controller: '\Drupal\node_json_data\Controller\DataController::index'
+    _title: "Api data"
+  requirements:
+    _permission: "access content"    

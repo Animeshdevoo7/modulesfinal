@@ -1,0 +1,5 @@
+name: Content generator
+type: module
+description: This module is designed to create multiple contents
+core_version_requirement: ^9||^10
+package: Advanced Modules

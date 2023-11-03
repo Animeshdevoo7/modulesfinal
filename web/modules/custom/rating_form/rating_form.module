@@ -1,0 +1,29 @@
+<?php
+/**
+ * Implements hook_block_info().
+ */
+function rating_form_block_info() {
+    $blocks=[];
+  $blocks['custom_block'] = array(
+    'info' => 'Feedback Form',
+    'status' => TRUE,
+    // 'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function rating_form_block_view($delta = '') {
+    $block =[];
+  if ($delta == 'custom_block') {
+    $block['subject'] = 'Feedback Form'; 
+    $block['content'] = \Drupal::formBuilder()->getForm('Drupal\rating_form\Form\RatingForm');
+  }
+    return $block;
+  
+}
+
+
+?>

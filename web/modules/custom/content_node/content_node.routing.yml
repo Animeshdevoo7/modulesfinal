@@ -1,0 +1,7 @@
+content_node.nodegen:
+  path: /node-form
+  defaults:
+    _form: '\Drupal\content_node\Form\ContentForm'
+    _title: "Content Type Form"
+  requirements:
+    _permission: "access content"

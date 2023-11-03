@@ -1,0 +1,28 @@
+<?php
+function rating_form_schema() {
+  // Define the custom table schema.
+  $schema['feedback_data'] = array(
+    'description' => 'Table to store feedback data',
+    'fields' => array(
+      'id' => array(
+        'type' => 'serial',
+        'unsigned' => true,
+        'not null' => true,
+      ),
+      'name' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => true,
+      ),
+      'rating' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => true,
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}
+
+?>

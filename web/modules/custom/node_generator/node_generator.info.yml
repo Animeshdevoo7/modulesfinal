@@ -1,0 +1,5 @@
+name: Node Generator
+type: module
+description: This module generates nodes magically
+core_version_requirement: ^9||^10
+package: Advanced Modules

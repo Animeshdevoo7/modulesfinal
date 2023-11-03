@@ -1,0 +1,5 @@
+name: Api Node Data
+type: module
+description: This module gives all the info about nodes in JSON format
+core_version_requirement: ^9||^10
+package: Advanced Modules
